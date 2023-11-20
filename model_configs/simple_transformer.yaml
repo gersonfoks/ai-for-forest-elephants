@@ -1,0 +1,23 @@
+# All the information about the model and its architecture
+model_name: example_simple_transformer
+model_type: simple_transformer
+
+
+architecture:
+  embedding_size: 256
+  num_heads: 8
+  num_hidden_layers: 1
+  activation_function: relu
+  dropout: 0.1
+optimizer:
+  type: adam
+  lr: 0.001
+lr_scheduler:
+  type: step
+  config:
+    step_size: 2
+    gamma: 0.1
+    verbose: true
+training_hyperparameters:
+  batch_size: 32
+  max_epochs: 10
