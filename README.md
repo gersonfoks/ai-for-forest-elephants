@@ -1,12 +1,20 @@
 # Elephants model exploration
 
+
+This repository shows of the work done during the ai-for-forest-elephants challenge hosted by FruitPunch.ai. Challenge information can be found here: [ai-for-forest-elephants](https://app.fruitpunch.ai/challenge/ai-for-forest-elephants#overview))
+
+
+
+
+
 ## Getting started
 
 Install the requirements from the requirements.txt file. I would recommend using python 3.10
 
 Furthermore, install pytorch and torchaudio.
 
-Create a config file `config/connection_config.yaml` containing the following information:
+During the challenge you could get the data by doing the following:
+Create a config file `config/connection_config.yaml` containing the following information in which the key and id are provided by fruitpunch:
 
 ```
 service_name: 's3'
@@ -14,6 +22,8 @@ region_name: 'us-east-2'
 aws_access_key_id: <to fill in>
 aws_secret_access_key: <to fill in>
 ```
+
+Unfortunatelly the dataset is no longer hosted by fruitpunch so you need to have/create your own.
 
 ## Getting the clips
 
